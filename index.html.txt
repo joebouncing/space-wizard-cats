@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Space Wizard Cats — Joseph Jerome Ibanga</title>
+  <meta name="description" content="A magical children’s story by Joseph Jerome Ibanga about Captain Whiskers and his cosmic crew." />
+  <style>
+    :root{
+      --bg:#0e1530;
+      --bg2:#111b3b;
+      --card:#ffffff;
+      --text:#12203a;
+      --muted:#54627c;
+      --gold:#e8b95b;
+      --cream:#f8f4ec;
+      --white:#fffdf8;
+      --max:1100px;
+      --radius:22px;
+      --shadow:0 14px 40px rgba(0,0,0,.18);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: Georgia, "Times New Roman", serif;
+      color:var(--white);
+      background:
+        radial-gradient(circle at 20% 20%, rgba(232,185,91,.15), transparent 20%),
+        radial-gradient(circle at 80% 10%, rgba(255,255,255,.12), transparent 18%),
+        linear-gradient(180deg,var(--bg),var(--bg2));
+      line-height:1.6;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(100% - 32px, var(--max)); margin:auto}
+    .nav{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background:rgba(14,21,48,.65);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .nav-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:16px;
+    }
+    .brand{font-weight:700; letter-spacing:.4px}
+    .nav-links{display:flex; gap:18px; flex-wrap:wrap; font-size:.95rem; opacity:.95}
+    .hero{
+      padding:72px 0 40px;
+    }
+    .hero-grid{
+      display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center;
+    }
+    .eyebrow{
+      display:inline-block;
+      color:var(--gold);
+      font-size:.95rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+    }
+    h1,h2,h3{
+      margin:0 0 14px;
+      line-height:1.1;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    h1{font-size:clamp(2.4rem,5vw,4.4rem)}
+    h2{font-size:clamp(1.6rem,3vw,2.4rem); color:var(--cream)}
+    h3{font-size:1.2rem; color:var(--text)}
+    .subtitle{
+      font-size:clamp(1rem,2vw,1.25rem);
+      color:#d8deef;
+      max-width:62ch;
+    }
+    .hero-card{
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:var(--radius);
+      padding:14px;
+      box-shadow:var(--shadow);
+    }
+    .hero-card img{
+      width:100%; display:block; border-radius:16px; aspect-ratio:4/5; object-fit:cover;
+    }
+    .buttons{display:flex; gap:14px; flex-wrap:wrap; margin-top:22px}
+    .btn{
+      display:inline-block; padding:12px 18px; border-radius:999px;
+      font-weight:700; border:1px solid rgba(255,255,255,.16);
+    }
+    .btn.primary{background:var(--gold); color:#231a07; border-color:transparent}
+    .btn.secondary{background:transparent; color:var(--white)}
+    section{padding:34px 0}
+    .card{
+      background:var(--card);
+      color:var(--text);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:26px;
+    }
+    .lead{color:var(--muted)}
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:22px}
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:22px}
+    .character p,.preview p{margin:0; color:var(--muted)}
+    .gallery{
+      display:grid; grid-template-columns:repeat(3,1fr); gap:18px;
+    }
+    .gallery img{
+      width:100%; display:block; border-radius:18px; aspect-ratio:4/5; object-fit:cover;
+      box-shadow:var(--shadow);
+    }
+    .quote{
+      border-left:4px solid var(--gold);
+      padding-left:14px;
+      font-style:italic;
+      color:#dfe6f8;
+      margin-top:18px;
+    }
+    .footer{
+      padding:40px 0 60px;
+      color:#d8deef;
+      text-align:center;
+    }
+    .small{font-size:.95rem; color:var(--muted)}
+    .tag-list{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+    .tag{
+      background:#eef2fb; color:#30405f; padding:8px 12px; border-radius:999px; font-size:.9rem;
+    }
+    @media (max-width: 860px){
+      .hero-grid,.grid-2,.grid-3,.gallery{grid-template-columns:1fr}
+      .nav-inner{align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">Space Wizard Cats</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#characters">Characters</a>
+        <a href="#preview">Preview</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#author">Author</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Children’s Picture Book</span>
+        <h1>Space Wizard Cats</h1>
+        <h2>An Interstellar Tale of Magic, Courage, and Cosmic Wonder</h2>
+        <p class="subtitle">
+          A magical children’s story by <strong>Joseph Jerome Ibanga</strong> about Captain Whiskers and his cosmic crew as they surf across the moon, awaken ancient moonstones, and discover that every dream can leave a trail of light.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#preview">Read the Preview</a>
+          <a class="btn secondary" href="#author">About the Author</a>
+        </div>
+        <p class="quote">“Every dream you chase leaves a trail of light.”</p>
+      </div>
+      <div class="hero-card">
+        <img src="images/cover.jpg" alt="Captain Whiskers on the moon with a wand" />
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="card">
+        <h3>About the Book</h3>
+        <p class="lead">
+          <em>Space Wizard Cats</em> is a heartwarming adventure filled with moonlit wonder, sparkling magic, and unforgettable feline heroes. Captain Whiskers and his loyal crew ride enchanted pizza boards across the moon, awaken the Moonstone Guardian, and soar into dazzling starfields beyond the night sky.
+        </p>
+        <div class="tag-list">
+          <span class="tag">Cats</span>
+          <span class="tag">Space Adventure</span>
+          <span class="tag">Fantasy</span>
+          <span class="tag">Friendship</span>
+          <span class="tag">Ages 3–6</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="characters">
+    <div class="wrap">
+      <div class="grid-3">
+        <div class="card character">
+          <h3>Captain Whiskers</h3>
+          <p>A brave orange cat with a wizard hat, a glowing wand, and a heart full of wonder.</p>
+        </div>
+        <div class="card character">
+          <h3>The Cosmic Crew</h3>
+          <p>A brave gray tabby, a gentle cream-colored cat, and a playful tuxedo cat.</p>
+        </div>
+        <div class="card character">
+          <h3>The Moonstone Guardian</h3>
+          <p>A radiant being of crystal and moonlight who guides the crew toward the stars.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="preview">
+    <div class="wrap">
+      <div class="card">
+        <h3>Story Preview</h3>
+        <div class="grid-2">
+          <div class="preview">
+            <h3>The Cosmic Beginning</h3>
+            <p>Captain Whiskers stood on the moon. Earth glowed bright and blue above him. He lifted his wand, and a golden spark twinkled at the tip.</p>
+          </div>
+          <div class="preview">
+            <h3>The Cosmic Crew</h3>
+            <p>Whoosh! Captain Whiskers zoomed across the moon on his pepperoni-pizza board with his friends racing behind him through moon dust, sparkles, and magic.</p>
+          </div>
+          <div class="preview">
+            <h3>The Awakening of the Moonstones</h3>
+            <p>The glowing blue moonstones hummed, shimmered, and blazed with light until the Moonstone Guardian rose from the crater.</p>
+          </div>
+          <div class="preview">
+            <h3>Journey to the Starfields</h3>
+            <p>The cats soared upward on blazing pizza boards, flying past a golden lion, a fiery phoenix, and shimmering cosmic fish.</p>
+          </div>
+          <div class="preview">
+            <h3>The Nebula of Dreams</h3>
+            <p>Far beyond the moon, the cats found a glowing pawprint-shaped nebula and heard a voice promise that every dream leaves a trail of light.</p>
+          </div>
+          <div class="preview">
+            <h3>The Light We Leave Behind</h3>
+            <p>With wands raised high, the Space Wizard Cats sent sparkling light across the universe, turning each glittering spark into a brand-new star.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="images/scene1.jpg" alt="Captain Whiskers on the moon" />
+        <img src="images/scene2.jpg" alt="The cosmic crew surfing pizza boards" />
+        <img src="images/scene3.jpg" alt="The Moonstone Guardian rising from glowing moonstones" />
+        <img src="images/scene4.jpg" alt="Cats flying through the starfields" />
+        <img src="images/scene5.jpg" alt="The Nebula of Dreams shaped like a pawprint" />
+        <img src="images/scene6.jpg" alt="The magical ending with stars and light" />
+      </div>
+    </div>
+  </section>
+
+  <section id="author">
+    <div class="wrap">
+      <div class="card">
+        <h3>About the Author</h3>
+        <p class="lead">
+          Joseph Jerome Ibanga is the creator of <em>Space Wizard Cats</em>, a magical children’s story inspired by wonder, imagination, and the joy of adventure. Through Captain Whiskers and his cosmic crew, he invites young readers to dream boldly, explore bravely, and believe in the light they carry within.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><strong>Space Wizard Cats</strong> — An Interstellar Tale of Magic, Courage, and Cosmic Wonder</p>
+      <p>By Joseph Jerome Ibanga</p>
+      <p class="small">Built for free publishing on GitHub Pages.</p>
+    </div>
+  </footer>
+</body>
+</html>
